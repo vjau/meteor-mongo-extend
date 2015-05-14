@@ -1,6 +1,6 @@
 # Mongo-extend
 
-Meteor package that adds an extend method to minimongo collections allowing to update documents on the client by passing object instead of fields.
+Meteor package that adds an extend method to minimongo collections allowing to update documents on the client by passing an object instead of fields.
 
 ## Why this package ?
 
