@@ -15,11 +15,13 @@ Under the hood, it use the browser package vjau:jsdiff2mongo that builds the upd
 meteor add vjau:mongo-extend
 
 ## Usage
-
-	var obj = Coll.findOne({});
-	obj.foo = "bar";
-	Coll.extend(obj);
-	//it just works !
+	
+```js
+var obj = Coll.findOne({});
+obj.foo = "bar";
+Coll.extend(obj);
+//it just works !
+```
 
 ## Limitations
 
