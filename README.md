@@ -8,7 +8,7 @@ Sometimes it's practical to get an object from the database, modify the object a
 
 This package solves this problem by adding an extend method to collections on the client, allowing to pass directly the updated object as a parameter.
 
-Under the hood, it use the browser package vjau:jsdiff2mongo that builds the update query.
+Under the hood, it use the brother package vjau:jsdiff2mongo that builds the update query.
 
 ## Installation
 
