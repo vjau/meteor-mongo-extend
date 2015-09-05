@@ -9,6 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.use('mongo','client');
+  api.use('underscore','client');
   api.use('vjau:jsdiff2mongo@1.0.1','client');
   api.addFiles('mongo-extend.js','client');
 
@@ -17,5 +18,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('vjau:mongo-extend');
+  api.use('mongo');
   api.addFiles('mongo-extend-tests.js','client');
 });
