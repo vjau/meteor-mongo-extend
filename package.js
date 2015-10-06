@@ -1,6 +1,6 @@
 Package.describe({
   name: 'vjau:mongo-extend',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Adds a method to client collections allowing to update docs by passing an object instead of fields.',
   git: 'https://github.com/vjau/meteor-mongo-extend',
   documentation: 'README.md'
@@ -10,7 +10,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.use('mongo','client');
   api.use('underscore','client');
-  api.use('vjau:jsdiff2mongo@1.0.1','client');
+  api.use('vjau:jsdiff2mongo@1.0.3','client');
   api.addFiles('mongo-extend.js','client');
 
 });
