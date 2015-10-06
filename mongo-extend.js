@@ -7,8 +7,7 @@ Mongo.Collection.prototype.extend = function(obj){
     throw new Error("passed object must have an _id");
   }
 
-  var foo = this.findOne({});
-  if (obj && _.isString(obj._id)){
+  if (obj && _.isString(obj._id) || _.isObject(obj._id)){
     var oldObj = this.findOne({_id:obj._id});
     var query;
     if (oldObj && oldObj._id === obj._id){
