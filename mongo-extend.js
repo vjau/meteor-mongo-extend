@@ -12,7 +12,9 @@ Mongo.Collection.prototype.extend = function(obj){
     var query;
     if (oldObj && oldObj._id === obj._id){
       query = jsDiff2Mongo(oldObj, obj);
-      this.update.apply(this, query);
+      if (Array.isArray(query) && query.length > 0){
+      	this.update.apply(this, query);	
+      }
     } else {
       throw new Error("no object in mongoDB with this _id")
     }
